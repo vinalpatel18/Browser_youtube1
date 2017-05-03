@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.tech1.browser_youtube"
+    android:installLocation="preferExternal">
+
+    <!--
+   android:versionCode="1"
+    android:versionName="2"
+   First line is androidnamespace it should be as it is unless google changes it
+                                    Secind line is for package name always name it as reverce formate of domainn .It is most important as it defines application's IDentity
+                                    Third line is about intallation location
+                                    versioncode is for developer's use it code be any
+                                    versaion name is for end user it shows the version of the application, always put incremental oder to update your aaplication
+                                    Once application is publised it cannot be changed
+    -->
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    //Permission is required to access internet from android
+
+    <!--
+     Permission to access Internet
+                                                                        also you can add user-fearture attribute to operate that hardware example camera mice etc
+    -->
+    <!--
+   <uses-sdk android:minSdkVersion="20"/>
+          minimum android version required to install this application
+    -->
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@drawable/icon1_youtube"
+        android:label=""
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Browser_youtube_app"
+            android:configChanges="orientation|screenSize"
+            android:label="DW_youtube"> <!-- "orientation|screenSize" resolves the issue of loaging webview again when device is rotated -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <!--
+            <intent-filter>
+                <action android:name="com.example.tech1.browser_youtube.Browser_youtube_app"/>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            -->
+        </activity>
+    </application>
+
+</manifest>

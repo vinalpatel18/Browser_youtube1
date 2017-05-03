@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context="com.example.tech1.browser_youtube.Browser_youtube_app"
+    android:id="@+id/FrameLayout">
+
+   <!-- <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:id="@+id/progressbar1"/> -->
+
+
+
+            <WebView
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/activity_browser_youtube_app_webview" >
+            </WebView>
+
+
+
+
+
+</FrameLayout>
